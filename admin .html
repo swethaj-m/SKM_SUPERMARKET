@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Admin - SKM SUPERMARKET</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="navbar">
+  <h1>🛒 SKM SUPERMARKET - Admin</h1>
+  <nav>
+    <a href="index.html">Home / முகப்பு</a>
+    <a href="products.html">Products / பொருட்கள்</a>
+    <a href="admin.html">Admin / நிர்வாகம்</a>
+  </nav>
+</header>
+
+<section class="admin-section">
+  <form id="adminForm">
+    <label for="category">Select Category / பிரிவு தேர்ந்தெடுக்கவும்:</label>
+    <select id="category">
+      <option value="Fruits">Fruits / பழங்கள்</option>
+      <option value="Vegetables">Vegetables / காய்கறிகள்</option>
+      <option value="Groceries">Groceries / கிரொசரி பொருட்கள்</option>
+      <option value="Dairy">Dairy / பால் பொருட்கள்</option>
+      <option value="Household">Household / வீட்டு பொருட்கள்</option>
+    </select>
+
+    <label for="descriptionEnglish">Description (English):</label>
+    <textarea id="descriptionEnglish" rows="3"></textarea>
+
+    <label for="descriptionTamil">Description (Tamil):</label>
+    <textarea id="descriptionTamil" rows="3"></textarea>
+
+    <button type="submit">Save / சேமிக்கவும்</button>
+  </form>
+
+  <div id="savedMessage" style="margin-top:20px; color:green;"></div>
+</section>
+
+<script src="js/admin.js"></script>
+
+</body>
+</html>
