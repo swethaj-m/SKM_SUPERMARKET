@@ -108,3 +108,43 @@ html {
     text-align: center;
   }
   }
+/* ============================= */
+/* PRODUCTS PAGE BACKGROUND ONLY */
+/* ============================= */
+
+.products-page {
+  position: relative;
+  min-height: 100vh;
+}
+
+/* Background image */
+.products-page::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: url("../images/shop(1).jpg") no-repeat center center;
+  background-size: cover;
+  opacity: 0.5;   /* 50% opacity */
+  z-index: -1;
+}
+
+/* Make sure products section is transparent */
+.products-page .products-section {
+  background: transparent;
+}
+
+/* Cards readable */
+.products-page .category-card,
+.products-page .category-info {
+  background: rgba(255, 255, 255, 0.9);
+}
+
+/* Mobile safety */
+@media (max-width: 600px) {
+  .products-page .navbar {
+    flex-direction: column;
+    text-align: center;
+  }
+  }
+  
+
