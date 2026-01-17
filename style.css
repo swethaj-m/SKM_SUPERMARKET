@@ -1,13 +1,14 @@
-/* GLOBAL */
+/* RESET */
 * {
   box-sizing: border-box;
 }
 
+/* BODY WITH FULL BACKGROUND IMAGE */
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  color: #2c3e50;
   font-weight: bold;
+  color: #2c3e50;
   min-height: 100vh;
   position: relative;
 }
@@ -23,18 +24,6 @@ body::before {
   background: url("../images/shop(1).jpg") no-repeat center center;
   background-size: cover;
   opacity: 0.5; /* 50% opacity */
-  z-index: -2;
-}
-
-/* LIGHT OVERLAY FOR READABILITY */
-body::after {
-  content: "";
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(255, 255, 255, 0.4);
   z-index: -1;
 }
 
@@ -49,6 +38,11 @@ body::after {
   align-items: center;
 }
 
+.navbar h1 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
 .navbar nav a {
   color: white;
   text-decoration: none;
@@ -59,16 +53,17 @@ body::after {
   text-decoration: underline;
 }
 
-/* HERO */
+/* HERO SECTION */
 .hero {
-  padding: 80px 20px;
+  padding: 90px 20px;
   text-align: center;
-  color: #ffffff;
-  background: rgba(39, 174, 96, 0.6);
+  background: rgba(39, 174, 96, 0.7);
+  color: white;
 }
 
 .hero h2 {
   font-size: 2rem;
+  margin-bottom: 10px;
 }
 
 .hero p {
@@ -84,11 +79,11 @@ body::after {
 }
 
 .feature-card {
-  background: white;
+  background: rgba(255, 255, 255, 0.9);
   padding: 25px;
   border-radius: 12px;
   text-align: center;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
 }
 
 .feature-card h3 {
@@ -103,7 +98,7 @@ footer {
   padding: 15px;
 }
 
-/* MOBILE FRIENDLY */
+/* MOBILE RESPONSIVE */
 @media (max-width: 600px) {
   .navbar {
     flex-direction: column;
@@ -122,4 +117,3 @@ footer {
     font-size: 1rem;
   }
   }
-                              
